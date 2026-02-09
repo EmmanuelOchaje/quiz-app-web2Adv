@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/0210e62244.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <button class="strt_btn">Start Quiz</button>
+    <!-- <div class="cont"></div> -->
+    <!-- rules -->
+    <div class="rules">
+      <h2>Rules</h2>
+      <ul>
+        <li>1. You have only 15 seconds per question.</li>
+        <li>2. Once you select your answer, you cannot reselect</li>
+        <li>3. You can't select an answer once the time goes off.</li>
+        <li>4. You can't exit the quiz while you are playing.</li>
+        <li>5. You will get points on the basis of your correct answers.</li>
+      </ul>
+      <div class="btns">
+        <button class="exit">Exit Quiz</button>
+        <button class="continue">Continue to Quiz</button>
+      </div>
+    </div>
+
+    <!-- quiz -->
+    <div class="app">
+      <div class="header">
+        <h2>Quiz App</h2>
+        <p>Time: <span class="timer">15</span>s</p>
+      </div>
+
+      <div class="quest"></div>
+
+      <div class="option_list">
+        <!-- Options will be inserted here dynamically -->
+      </div>
+
+      <div class="next">
+        <p>
+          <span class="que_count">1</span> of <span class="total_que">0</span>
+        </p>
+        <button class="next_que">Next Que</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
+  </body>
+</html>
